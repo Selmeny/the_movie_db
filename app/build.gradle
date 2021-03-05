@@ -26,11 +26,18 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
             buildConfigField 'String', "API_KEY", API_KEY
+            buildConfigField 'String', "BASE_URL", BASE_URL
+            buildConfigField 'String', "IMAGE_BASE_URL", IMAGE_BASE_URL
+            buildConfigField 'String', "VIDEO_BASE_URL", VIDEO_BASE_URL
         }
 
         debug {
             buildConfigField 'String', "API_KEY", API_KEY
+            buildConfigField 'String', "BASE_URL", BASE_URL
+            buildConfigField 'String', "IMAGE_BASE_URL", IMAGE_BASE_URL
+            buildConfigField 'String', "VIDEO_BASE_URL", VIDEO_BASE_URL
         }
     }
     compileOptions {
@@ -69,6 +76,9 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
     implementation("com.squareup.okio:okio:2.8.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+
+    // Youtube
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
