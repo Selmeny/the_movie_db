@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_on_primary"
+    android:background="?attr/colorOnPrimary"
     tools:context=".fragments.DetailFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -25,17 +25,6 @@
             app:title="Details" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <!--<androidx.core.widget.NestedScrollView
-        android:id="@+id/ns_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-
-
-    </androidx.core.widget.NestedScrollView>-->
 
     <LinearLayout
         android:id="@+id/ln_detail"
